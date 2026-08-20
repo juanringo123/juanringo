@@ -102,7 +102,8 @@ iframe {
   font-size: 3.25rem;
   line-height: 0.92;
   max-width: 100%;
-  overflow-wrap: anywhere;
+  overflow-wrap: normal;
+  word-break: normal;
 }
 
 .hero-lastname-full {
@@ -453,6 +454,7 @@ iframe {
 
   .hero-lastname-full {
     display: inline;
+    white-space: nowrap;
   }
 
   .hero-lastname-mobile {
@@ -485,7 +487,13 @@ iframe {
 
 @media (min-width: 1024px) {
   .hero-title {
-    font-size: 8rem;
+    font-size: 6.75rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .hero-title {
+    font-size: 7.5rem;
   }
 }
 
