@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="Official music portfolio of Juan Marcos. Musician, guitarist, and traditional Batak music explorer."
+  >
+  <meta property="og:title" content="Juan Music | Musician Portfolio">
+  <meta property="og:description" content="Music, live performance, videos, and contact for Juan Marcos.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/hero.png">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="theme-color" content="#090909">
+  <title>Juan Music | Musician Portfolio</title>
+
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <script>
+    window.tailwind = {
+      config: {
+        theme: {
+          extend: {
+            colors: {
+              stage: "#090909",
+              panel: "#141414",
+              surface: "#1A1A1A",
+              accent: "#F97316",
+              accentHover: "#EA580C"
+            },
+            fontFamily: {
+              sans: ["Inter", "system-ui", "sans-serif"],
+              display: ["Montserrat", "Inter", "system-ui", "sans-serif"]
+            }
+          }
+        }
+      }
+    };
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="dist/output.css">
+</head>
+<body class="bg-stage text-white antialiased overflow-x-hidden">
+  <header id="siteHeader" class="fixed left-0 top-0 z-50 w-full">
+    <nav class="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 sm:px-6 lg:px-8" aria-label="Primary navigation">
+      <a href="#home" class="inline-flex items-center gap-3 font-display text-lg font-black">
+        <span class="grid h-10 w-10 place-items-center rounded-full bg-orange-500 text-black">
+          <i class="fa-solid fa-wave-square" aria-hidden="true"></i>
+        </span>
+        <span>JUAN MUSIC</span>
+      </a>
+
+      <ul class="hidden items-center gap-7 text-sm font-semibold text-zinc-300 lg:flex">
+        <li><a class="nav-link" href="#home">HOME</a></li>
+        <li><a class="nav-link" href="#about">ABOUT</a></li>
+        <li><a class="nav-link" href="#music">MUSIC</a></li>
+        <li><a class="nav-link" href="#videos">VIDEOS</a></li>
+        <li><a class="nav-link" href="#journey">JOURNEY</a></li>
+        <li><a class="nav-link" href="#contact">CONTACT</a></li>
+      </ul>
+
+      <button
+        id="menuToggle"
+        class="grid h-11 w-11 place-items-center rounded-full border border-zinc-700 text-white transition hover:border-orange-500 hover:text-orange-400 lg:hidden"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-controls="mobileMenu"
+        aria-expanded="false"
+      >
+        <i class="fa-solid fa-bars text-lg" aria-hidden="true"></i>
+      </button>
+    </nav>
+
+    <div id="mobileMenu" class="mobile-menu border-t border-zinc-800 bg-black/95 px-5 lg:hidden">
+      <ul class="mx-auto flex max-w-7xl flex-col gap-1 py-4 text-sm font-semibold text-zinc-200">
+        <li><a class="mobile-link" href="#home">HOME</a></li>
+        <li><a class="mobile-link" href="#about">ABOUT</a></li>
+        <li><a class="mobile-link" href="#music">MUSIC</a></li>
+        <li><a class="mobile-link" href="#videos">VIDEOS</a></li>
+        <li><a class="mobile-link" href="#journey">JOURNEY</a></li>
+        <li><a class="mobile-link" href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="relative flex min-h-screen items-center overflow-hidden">
+      <img
+        src="images/hero.png"
+        alt="Keyboardist performing on a dark concert stage with orange lights"
+        class="absolute inset-0 h-full w-full object-cover object-center"
+      >
+      <div class="absolute inset-0 bg-gradient-to-r from-black via-black/82 to-black/28"></div>
+      <div class="absolute inset-x-0 bottom-0 h-44 bg-gradient-to-t from-stage to-transparent"></div>
+
+      <div class="relative z-10 mx-auto w-full max-w-7xl px-5 pb-20 pt-32 sm:px-6 lg:px-8">
+        <div class="hero-copy max-w-3xl">
+          <p class="mb-5 text-sm font-bold uppercase text-orange-400 sm:text-base">
+            Musician / Guitarist / Batak Music
+          </p>
+          <h1 class="font-display text-6xl font-black leading-none text-white sm:text-7xl md:text-8xl lg:text-9xl">
+            JUAN<br>
+            <span class="text-orange-500">SIRINGORINGO</span>
+          </h1>
+          <p class="mt-7 max-w-xl text-xl leading-relaxed text-zinc-200 sm:text-2xl">
+            Creating sound.<br>
+            Sharing stories through music.
+          </p>
+          <div class="mt-9 flex flex-col gap-4 sm:flex-row">
+            <a
+              href="#music"
+              class="inline-flex items-center justify-center gap-3 rounded-full bg-orange-500 px-7 py-3 font-bold text-black transition duration-300 hover:bg-orange-400 focus:outline-none focus:ring-2 focus:ring-orange-300 focus:ring-offset-2 focus:ring-offset-black"
+            >
+              <i class="fa-solid fa-play" aria-hidden="true"></i>
+              Listen to My Music
+            </a>
+            <a
+              href="#videos"
+              class="inline-flex items-center justify-center gap-3 rounded-full border border-zinc-600 px-7 py-3 font-bold text-white transition duration-300 hover:border-orange-500 hover:text-orange-400 focus:outline-none focus:ring-2 focus:ring-orange-300 focus:ring-offset-2 focus:ring-offset-black"
+            >
+              <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+              Watch Performance
+            </a>
+          </div>
+        </div>
+
+        <div class="mt-14 grid max-w-3xl grid-cols-3 gap-3 text-sm text-zinc-300 sm:gap-4">
+          <div class="hero-stat">
+            <span class="block font-display text-2xl font-black text-white">2026</span>
+            <span>New projects</span>
+          </div>
+          <div class="hero-stat">
+            <span class="block font-display text-2xl font-black text-white">Live</span>
+            <span>Performances</span>
+          </div>
+          <div class="hero-stat">
+            <span class="block font-display text-2xl font-black text-white">Guitar</span>
+            <span>Main instrument</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="bg-zinc-950 py-24 sm:py-28">
+      <div class="mx-auto grid max-w-7xl items-center gap-12 px-5 sm:px-6 lg:grid-cols-[0.9fr_1.1fr] lg:px-8">
+        <div class="reveal relative">
+          <div class="absolute -left-4 -top-4 h-full w-full border border-orange-500/40"></div>
+          <img
+            src="images/profile.JPG"
+            alt="Juan Marcos portrait for music portfolio"
+            class="relative aspect-[4/5] w-full object-cover"
+          >
+        </div>
+
+        <div class="reveal">
+          <p class="section-kicker">About Me</p>
+          <h2 class="section-title">ABOUT ME</h2>
+          <p class="mt-6 max-w-2xl text-lg leading-8 text-zinc-300">
+            Saya adalah seorang yang memiliki ketertarikan besar pada musik, khususnya dalam bermain gitar dan mengeksplorasi musik tradisional Batak.
+          </p>
+          <p class="mt-5 max-w-2xl leading-8 text-zinc-400">
+            Bagi saya, musik bukan hanya tentang memainkan alat musik, tetapi juga menjadi ruang untuk berekspresi, belajar, dan mengembangkan kreativitas.
+          </p>
+
+          <div class="mt-9 grid gap-4 sm:grid-cols-3">
+            <div class="info-tile">
+              <i class="fa-solid fa-music text-orange-400" aria-hidden="true"></i>
+              <span>Genre</span>
+              <strong>Traditional Batak and acoustic</strong>
+            </div>
+            <div class="info-tile">
+              <i class="fa-solid fa-guitar text-orange-400" aria-hidden="true"></i>
+              <span>Instrument</span>
+              <strong>Guitar</strong>
+            </div>
+            <div class="info-tile">
+              <i class="fa-solid fa-sliders text-orange-400" aria-hidden="true"></i>
+              <span>Focus</span>
+              <strong>Expression and creativity</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="music" class="bg-stage py-24 sm:py-28">
+      <div class="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+        <div class="reveal flex flex-col justify-between gap-5 md:flex-row md:items-end">
+          <div>
+            <p class="section-kicker">Featured Music</p>
+            <h2 class="section-title">FEATURED MUSIC</h2>
+          </div>
+          <p class="max-w-md text-zinc-400">
+            Listen to selected tracks directly from Spotify.
+          </p>
+        </div>
+
+        <div class="mt-12 grid gap-6 md:grid-cols-3">
+          <article class="spotify-card reveal">
+            <iframe
+              class="spotify-embed"
+              src="https://open.spotify.com/embed/track/4uPSF2q9PIHeeVeY1XPj1f?utm_source=generator&theme=0"
+              title="Spotify track 1"
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy">
+            </iframe>
+            <a class="spotify-link" href="https://open.spotify.com/track/4uPSF2q9PIHeeVeY1XPj1f" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-spotify" aria-hidden="true"></i>
+              Open on Spotify
+            </a>
+          </article>
+
+          <article class="spotify-card reveal">
+            <iframe
+              class="spotify-embed"
+              src="https://open.spotify.com/embed/track/2KPQSzA8ANCW7byDMUSZAP?utm_source=generator&theme=0"
+              title="Spotify track 2"
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy">
+            </iframe>
+            <a class="spotify-link" href="https://open.spotify.com/track/2KPQSzA8ANCW7byDMUSZAP" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-spotify" aria-hidden="true"></i>
+              Open on Spotify
+            </a>
+          </article>
+
+          <article class="spotify-card reveal">
+            <iframe
+              class="spotify-embed"
+              src="https://open.spotify.com/embed/track/74A6wndYf4850b7jIulyVD?utm_source=generator&theme=0"
+              title="Spotify track 3"
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy">
+            </iframe>
+            <a class="spotify-link" href="https://open.spotify.com/track/74A6wndYf4850b7jIulyVD" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-spotify" aria-hidden="true"></i>
+              Open on Spotify
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="videos" class="bg-zinc-950 py-24 sm:py-28">
+      <div class="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+        <div class="reveal">
+          <p class="section-kicker">Live Video</p>
+          <h2 class="section-title">LIVE PERFORMANCE</h2>
+        </div>
+
+        <article class="reveal mt-12 grid gap-7 lg:grid-cols-[1.35fr_0.65fr] lg:items-center">
+          <div class="video-frame aspect-video">
+            <iframe
+              class="h-full w-full"
+              data-youtube-id="MdrWifiRWHw"
+              src="https://www.youtube.com/embed/MdrWifiRWHw"
+              title="Live Performance 2026 video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div>
+            <span class="inline-flex items-center gap-2 rounded-full border border-orange-500/40 px-4 py-2 text-sm font-semibold text-orange-300">
+              <i class="fa-solid fa-circle-play" aria-hidden="true"></i>
+              Featured
+            </span>
+            <h3 class="mt-5 font-display text-3xl font-black text-white sm:text-4xl">Live Performance 2026</h3>
+            <p class="mt-4 leading-8 text-zinc-400">
+              A focused live performance moment featuring guitar, atmosphere, and a performance-first arrangement.
+            </p>
+            <a class="youtube-link mt-6" href="https://youtu.be/MdrWifiRWHw" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+              Open on YouTube
+            </a>
+          </div>
+        </article>
+
+        <div class="mt-12 grid gap-5 md:grid-cols-3">
+          <article class="video-card reveal">
+            <div class="aspect-video">
+              <iframe
+                class="h-full w-full"
+                data-youtube-id="lTHZNkWc8_c"
+                src="https://www.youtube.com/embed/lTHZNkWc8_c"
+                title="Performance 1 video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen>
+              </iframe>
+            </div>
+            <h3>Performance 1</h3>
+            <a class="youtube-card-link" href="https://youtu.be/lTHZNkWc8_c" target="_blank" rel="noopener noreferrer">Open on YouTube</a>
+          </article>
+
+          <article class="video-card reveal">
+            <div class="aspect-video">
+              <iframe
+                class="h-full w-full"
+                data-youtube-id="eVLYuFRfOR4"
+                src="https://www.youtube.com/embed/eVLYuFRfOR4"
+                title="Performance 2 video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen>
+              </iframe>
+            </div>
+            <h3>Performance 2</h3>
+            <a class="youtube-card-link" href="https://youtu.be/eVLYuFRfOR4" target="_blank" rel="noopener noreferrer">Open on YouTube</a>
+          </article>
+
+          <article class="video-card reveal">
+            <div class="aspect-video">
+              <iframe
+                class="h-full w-full"
+                data-youtube-id="VskeYoO2x_w"
+                src="https://www.youtube.com/embed/VskeYoO2x_w"
+                title="Music Cover video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen>
+              </iframe>
+            </div>
+            <h3>Music Cover</h3>
+            <a class="youtube-card-link" href="https://youtu.be/VskeYoO2x_w" target="_blank" rel="noopener noreferrer">Open on YouTube</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="journey" class="bg-stage py-24 sm:py-28">
+      <div class="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+        <div class="reveal max-w-2xl">
+          <p class="section-kicker">Music Journey</p>
+          <h2 class="section-title">MY JOURNEY</h2>
+        </div>
+
+        <div class="timeline mt-14">
+          <article class="timeline-item reveal">
+            <span>2022</span>
+            <h3>Started exploring music seriously</h3>
+          </article>
+          <article class="timeline-item reveal">
+            <span>2023</span>
+            <h3>Started performing with other musicians</h3>
+          </article>
+          <article class="timeline-item reveal">
+            <span>2024</span>
+            <h3>Live performances and music collaborations</h3>
+          </article>
+          <article class="timeline-item reveal">
+            <span>2025</span>
+            <h3>Exploring arrangement and music production</h3>
+          </article>
+          <article class="timeline-item reveal">
+            <span>2026</span>
+            <h3>Building personal music projects</h3>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="bg-zinc-950 py-24 sm:py-28">
+      <div class="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+        <div class="reveal">
+          <p class="section-kicker">Skill Set</p>
+          <h2 class="section-title">MUSIC SKILLS</h2>
+        </div>
+
+        <div class="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <article class="skill-card reveal">
+            <i class="fa-solid fa-guitar" aria-hidden="true"></i>
+            <h3>Guitar Playing</h3>
+          </article>
+          <article class="skill-card reveal">
+            <i class="fa-solid fa-music" aria-hidden="true"></i>
+            <h3>Music Arrangement</h3>
+          </article>
+          <article class="skill-card reveal">
+            <i class="fa-solid fa-headphones" aria-hidden="true"></i>
+            <h3>Music Production</h3>
+          </article>
+          <article class="skill-card reveal">
+            <i class="fa-solid fa-microphone-lines" aria-hidden="true"></i>
+            <h3>Live Performance</h3>
+          </article>
+          <article class="skill-card reveal">
+            <i class="fa-solid fa-sliders" aria-hidden="true"></i>
+            <h3>Mixing</h3>
+          </article>
+          <article class="skill-card reveal">
+            <i class="fa-solid fa-record-vinyl" aria-hidden="true"></i>
+            <h3>Traditional Batak Music</h3>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="bg-zinc-950 py-24 sm:py-28">
+      <div class="mx-auto max-w-5xl px-5 text-center sm:px-6 lg:px-8">
+        <div class="reveal">
+          <p class="section-kicker">Contact</p>
+          <h2 class="section-title">LET'S CONNECT</h2>
+          <p class="mx-auto mt-6 max-w-2xl text-lg leading-8 text-zinc-300">
+            Interested in music collaboration, performance, or creative projects? Let's create something together.
+          </p>
+        </div>
+
+        <form
+          class="contact-form reveal mx-auto mt-10 max-w-2xl text-left"
+          action="https://formsubmit.co/juanmarcossiringoringo@gmail.com"
+          method="POST"
+        >
+          <input type="hidden" name="_subject" value="New message from Juan Music Portfolio">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+
+          <div class="grid gap-5 sm:grid-cols-2">
+            <label>
+              <span>Name</span>
+              <input type="text" name="name" placeholder="Your name" autocomplete="name" required>
+            </label>
+            <label>
+              <span>Email</span>
+              <input type="email" name="email" placeholder="your@email.com" autocomplete="email" required>
+            </label>
+          </div>
+
+          <label class="mt-5 block">
+            <span>Message</span>
+            <textarea name="message" rows="5" placeholder="Tell me about your collaboration, event, or creative project." required></textarea>
+          </label>
+
+          <button class="contact-submit mt-6" type="submit">
+            <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+            Send Message
+          </button>
+        </form>
+
+        <div class="reveal mt-12 flex flex-wrap justify-center gap-4">
+          <a class="social-link" href="https://www.instagram.com/juansiringo_/" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+          </a>
+          <a class="social-link" href="https://www.youtube.com/@juansiringoringo0301" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+          </a>
+          <a class="social-link" href="https://open.spotify.com/artist/0CRxwEiCKhmBZHkXQk0t53" aria-label="Spotify" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-spotify" aria-hidden="true"></i>
+          </a>
+          <a class="social-link" href="https://www.tiktok.com/@juan_siringo" aria-label="TikTok" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-tiktok" aria-hidden="true"></i>
+          </a>
+          <a class="social-link" href="mailto:juanmarcossiringoringo@gmail.com" aria-label="Email">
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-zinc-800 bg-black py-10">
+    <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 px-5 text-center sm:px-6 md:flex-row md:text-left lg:px-8">
+      <div>
+        <a href="#home" class="font-display text-xl font-black text-white">JUAN MUSIC</a>
+        <p class="mt-2 text-sm text-zinc-400">Musician / Guitarist / Batak Music</p>
+      </div>
+      <div class="flex items-center gap-4 text-zinc-400">
+        <a class="footer-link" href="https://www.instagram.com/juansiringo_/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a class="footer-link" href="https://www.youtube.com/@juansiringoringo0301" target="_blank" rel="noopener noreferrer">YouTube</a>
+        <a class="footer-link" href="https://open.spotify.com/artist/0CRxwEiCKhmBZHkXQk0t53" target="_blank" rel="noopener noreferrer">Spotify</a>
+        <a class="footer-link" href="https://www.tiktok.com/@juan_siringo" target="_blank" rel="noopener noreferrer">TikTok</a>
+      </div>
+      <p class="text-sm text-zinc-500">&copy; 2026 Juan Marcos. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

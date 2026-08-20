@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+  This project currently uses the Tailwind CDN for simplicity.
+  Keep this file if you later switch to a local Tailwind build:
+
+  npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
+*/
